@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  agilebd2023
+  name:  aburaihan-dev
   namespace: demo
 spec:
   selector:
     matchLabels:
-      app: agilebd2023
+      app: aburaihan-dev
   template:
     metadata:
       labels:
-        app: agilebd2023
+        app: aburaihan-dev
     spec:
       containers:
-        - name: agilebd2023
-          image: mirajehossain/agilebd2023:latest
+        - name: aburaihan-dev
+          image: msrabon/scrum-dhaka-2023:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
